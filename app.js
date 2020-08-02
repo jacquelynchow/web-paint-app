@@ -58,7 +58,8 @@ window.addEventListener('load', () => {
     function ifLoad() {
         // ask user for drawing name
         var name = window.prompt("Enter the canvas name: ");
-        if (localStorage.getItem(name) === null) {
+        // if user put in a name that was not in storage and it wasn't because user cancelled
+        if (localStorage.getItem(name) === null && name != null) {
             alert("Sorry, there is no canvas with that name.");
             return;
         }
