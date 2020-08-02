@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+          Get Yo Paint!
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="drawing-board">
+            <div class="tools">
+                <div class="tools-icons">
+                    <input id="canvasName" class="canvasName" placeholder="Enter Drawing Name"></input>
+                    <img src="./save.png" id="save"></img>
+                    <img src="./load.png" id="load"></img>
+                </div>
+                <div class="tools-buttons">
+                    <button class="btn" type="button" id="clearSaved">Clear Saved Canvases</button>
+                    <button class="btn" type="button" id="showStored">Show Saved Canvases</button>
+                </div>
+            </div>
+            <div class="drawing-tools">
+                <div class="tool1">
+                    <input id="hex" type="color"></input>
+                    <img id="fill" src="./fill.png"/>
+                </div>
+                <div class="tool2">
+                    <input id="width" type="range"></input>
+                    <button type="button" id="clearDrawing">Clear</button>
+                </div>
+            </div>
+            <div>
+                <ul id="stored">Saved Drawings: </ul>
+            </div>
+        </div>
+        <div>
+            <canvas id="draw"></canvas>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+  </html>

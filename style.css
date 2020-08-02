@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+}
+
+.drawing-board {
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(172, 195, 166);
+}
+
+.tools {
+    display: flex;
+    margin: 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.tools-icons input {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.tools-icons img {
+    margin: 10px 5px;
+    margin-bottom: -10px;
+}
+.tools-buttons button {
+    margin: 15px 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5%;
+    background-color: rgb(221, 187, 157);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.tools-buttons .btn:hover {
+    background-color: rgb(245, 222, 202);
+}
+.tools-buttons {
+    margin-bottom: -10px;
+}
+
+.drawing-tools {
+    display: grid;
+    margin: 0px 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#width {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 65%;
+    padding: 0 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#clearDrawing {
+    margin-top: -10px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgba(233, 72, 139, 0.6);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#clearDrawing:hover {
+    background-color: rgba(226, 161, 188, 0.925);
+}
+#fill, #hex {
+    height: 40px;
+    width: 40px;
+}
+#hex {
+    margin-left: 60px;
+    width: 80px;
+    margin-top: 10px;
+}
+#fill {
+    margin-bottom: 0px;
+}
+.tool1, .tool2 {
+    grid-row: 1;
+}
+.tool1 {
+    margin-top: -10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+} 
+.tool2 {
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#stored {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#stored > li {
+    margin: 10px 0;
+    list-style: none;
+}
