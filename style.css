@@ -94,6 +94,12 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
 }
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
   /* 164, 14, 76 */
 #clearDrawing {
     padding: 10px;
